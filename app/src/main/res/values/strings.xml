@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">CopaNaMão</string>
+    <string name="nao_possui_conta">Não possui conta?Cadastre-se</string>
+    <string name="btn_cds_usuario">Cadastrar usuário</string>
+    <string name="ja_possuo_conta">Já possuo conta</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="grupoA">Grupo A</string>
+    <string name="id_sair_menu">Sair</string>
+
+    <!--card view-->
+    <string name="supporting">Greyhound divisively hello coldly wonderfully marginally far upon excluding.</string>
+    <string name="title">Title</string>
+    <string name="subhead">Subhead</string>
+    <string name="primary">Title goes here</string>
+    <string name="primary_short">Title here</string>
+    <string name="subtext">Subtitle here</string>
+    <string name="action_1">Compartilhar</string>
+    <string name="action_2">Action 2</string>
+    <string name="expanded_supporting">I\'m a thing. But, like most politicians, he promised more than he could deliver. You won\'t have time for sleeping, soldier, not with all the bed making you\'ll be doing</string>
+    <string name="title_activity_partidas_tabbed">Fase de grupos</string>
+    <string name="title_activity_resultados_tabbed">Resultados</string>
+    <string name="action_info">Info</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!--diagonal layout-->
+    <string name="diagonallayout_description">Hugh Michael Jackman is an Australian actor, singer and producer. Jackman has won international recognition for playing different roles in various film genres. \n\nHe is best known for his long-running role as Wolverine in the X-Men film series, as well as for his lead roles in the romantic-comedy fantasy Kate &amp; Leopold (2001), the action-horror film Van Helsing (2004)...</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+</resources>

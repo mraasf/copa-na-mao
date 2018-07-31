@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:diagonal="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical"
+    app:ignore="NamespaceTypo">
+
+    <com.github.florent37.diagonallayout.DiagonalLayout
+        android:id="@+id/diagonalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        diagonal:diagonal_angle="10"
+        diagonal:diagonal_position="bottom"
+        diagonal:diagonal_direction="left"
+        diagonal:diagonal_handleMargins="true"
+        >
+
+        <com.flaviofaria.kenburnsview.KenBurnsView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/estadio_fundo"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Copa do Brasil, Libertadores \n e UEFA"
+            android:textColor="@android:color/white"
+            android:layout_gravity="top|left"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="70dp"
+            android:textSize="25sp"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical"
+            android:layout_marginTop="105dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textColor="@android:color/white"
+                android:layout_gravity="top|left"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="15sp"
+                />
+
+
+        </LinearLayout>
+
+
+    </com.github.florent37.diagonallayout.DiagonalLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color"
+        android:text="PRÓXIMOS JOGOS"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <TextView
+        android:id="@+id/txt_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Não temos jogos para hoje"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/nanum_gothic"
+        android:textColor="@color/primary_dark"
+        android:layout_gravity="center_horizontal"/>
+    <ProgressBar
+        android:id="@+id/pb_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:indeterminateTint="#00bfff"
+        />
+
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="8dp"
+        app:fillColor="#4872a9"
+        app:indicatorVisibility="visible"
+        app:pageColor="#00000000"
+        app:radius="6dp"
+        app:slideInterval="5000"
+        app:strokeColor="#efeeee"
+        app:strokeWidth="1dp"
+        app:indicatorMarginVertical="2dp"/>
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+
+
+</LinearLayout>

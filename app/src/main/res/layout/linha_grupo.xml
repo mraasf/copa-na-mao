@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="0dp"
+    >
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="4dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+
+            <LinearLayout
+                android:id="@+id/lltxt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@color/layout_top_cardView">
+
+                <TextView
+                    android:id="@+id/nome_grupo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grupo A"
+                    android:textColor="@color/text_color_topo"
+                    android:fontFamily="@font/nanum_gothic"
+                    android:paddingStart="10dp"
+                   />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/P"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pts."
+                        android:textColor="@color/text_color_topo"
+                        android:layout_marginStart="113dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/V"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="V"
+                        android:textColor="@color/text_color_topo"
+                        android:paddingStart="29dp"
+                        />
+                    <TextView
+                        android:id="@+id/E"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="E"
+                        android:textColor="@color/text_color_topo"
+                        android:paddingStart="27dp"
+                       />
+
+                    <TextView
+                        android:id="@+id/D"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="D"
+                        android:textColor="@color/text_color_topo"
+                        android:paddingStart="42dp"
+                       />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lltxt1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                 />
+
+                <ImageView
+                    android:id="@+id/imgRussia"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/russia" />
+
+                <TextView
+                    android:id="@+id/txtRussia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:paddingStart="15dp"
+                    android:fontFamily="@font/nanum_gothic"
+                    android:text="Rússia"
+                    android:textColor="@color/text_color" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="120dp"
+                 />
+
+            <LinearLayout
+                android:id="@+id/ll1Direita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/divider1"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/lltxt1"
+                >
+
+                <TextView
+                    android:id="@+id/p_russia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="60dp"
+                    android:text="0"
+                    android:textColor="@color/text_color" />
+
+                <TextView
+                    android:id="@+id/v_russia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="40dp"
+                    android:text="0"
+                    android:textColor="@color/text_color" />
+
+                <TextView
+                    android:id="@+id/e_russia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="30dp"
+                    android:text="0"
+                    android:textColor="@color/text_color" />
+
+                <TextView
+                    android:id="@+id/d_russia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="40dp"
+                    android:text="0"
+                    android:textColor="@color/text_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/imgArabia"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/arabia_saudita" />
+
+                <TextView
+                    android:id="@+id/txtarabia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:paddingStart="15dp"
+                    android:fontFamily="@font/nanum_gothic"
+                    android:text="Arabia Saudita"
+                    android:textColor="@color/text_color" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll2direita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/divider1"
+                android:layout_below="@+id/ll1Direita"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/p_arabia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="60dp"
+                    android:text="0"
+                    android:textColor="@color/text_color" />
+
+                <TextView
+                    android:id="@+id/v_arabia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="40dp"
+                    android:text="0"
+                    android:textColor="@color/text_color" />
+
+                <TextView
+                    android:id="@+id/e_arabia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="30dp"
+                    android:text="0"
+                    android:textColor="@color/text_color" />
+
+                <TextView
+                    android:id="@+id/d_arabia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="40dp"
+                    android:text="0"
+                    android:textColor="@color/text_color" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll2"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:id="@+id/imgEgito"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/egito" />
+
+                <TextView
+                    android:id="@+id/txtEgito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:paddingStart="15dp"
+                    android:fontFamily="@font/nanum_gothic "
+                    android:text="Egito"
+                    android:textColor="@color/text_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll3direita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/divider1"
+                android:layout_below="@+id/ll2direita"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/p_egito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="60dp"
+                    android:text="0"
+                    android:textColor="@color/text_color" />
+
+                <TextView
+                    android:id="@+id/v_egito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="40dp"
+                    android:text="0"
+                    android:textColor="@color/text_color" />
+
+                <TextView
+                    android:id="@+id/e_egito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="30dp"
+                    android:text="0"
+                    android:textColor="@color/text_color" />
+
+                <TextView
+                    android:id="@+id/d_egito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="40dp"
+                    android:text="0"
+                    android:textColor="@color/text_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll3"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="5dp">
+
+
+                <ImageView
+                    android:id="@+id/imgUruguai"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/egito" />
+
+                <TextView
+                    android:id="@+id/txtUruguai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:paddingStart="15dp"
+                    android:fontFamily="@font/nanum_gothic "
+                    android:text="Uruguai"
+                    android:textColor="@color/text_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/divider1"
+                android:layout_below="@+id/ll3direita"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/p_uru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingStart="60dp"
+                    android:text="0"
+                    android:textColor="@color/text_color" />
+
+                <TextView
+                    android:id="@+id/v_uru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingStart="40dp"
+                    android:text="0"
+                    android:textColor="@color/text_color" />
+
+                <TextView
+                    android:id="@+id/e_uru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingStart="30dp"
+                    android:text="0"
+                    android:textColor="@color/text_color" />
+
+                <TextView
+                    android:id="@+id/d_uru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingStart="40dp"
+                    android:text="0"
+                    android:textColor="@color/text_color" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
